@@ -48,8 +48,7 @@ brain-tumor-detector/
 ├── brain_tumor_model.h5   # Trained CNN model (TensorFlow)
 ├── requirements.txt       # Python package dependencies
 ├── LICENSE                # Open-source MIT License
-├── README.md              # Project documentation (this file)
-└── assets/                # (Optional) Screenshots or test images
+└── README.md              # Project documentation (this file)
 ```
 
 ## 👥 Who Is This For?
