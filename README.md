@@ -22,9 +22,15 @@ To assist healthcare professionals and patients with a simple, accessible tool t
 ## 🚀 Live Demo
 
 👉 **Try the app on Hugging Face**  
-(https://huggingface.co/spaces/Sri-Harish/brain-tumor-detector/tree/main) 
-
+👉 [Launch on Hugging Face Spaces](https://Sri-Harish-brain-tumor-detector.hf.space)
 
 
 ## 📁 File Structure
+brain-tumor-detector/
+├── main.py                # Streamlit app logic
+├── brain_tumor_model.h5   # Trained CNN model
+├── requirements.txt       # Python dependencies
+├── LICENSE                # MIT license
+├── README.md              # This file
+└── assets/                # (Optional) screenshots, test images
 
