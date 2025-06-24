@@ -44,7 +44,10 @@ st.markdown("""
     }
     .uploadedFileName {
         font-weight: 700 !important;
-        color: #1e293b !important; /* dark slate */
+        color: #1e3a8a !important;
+    }
+    label, footer {
+        color: #1e3a8a !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -55,7 +58,9 @@ st.markdown("""
         <img src="https://img.icons8.com/fluency/96/brain.png" width="72" alt="Brain">
     </div>
     <h1 style='text-align:center; color:#2563eb;'>Brain Tumor Detector</h1>
-    <p style='text-align:center; font-size:16px;'>Upload a brain MRI image to detect tumor presence using AI</p>
+    <p style='text-align:center; font-size:16px; color:#7c3aed; font-weight:500;'>
+    Upload a brain MRI image to detect tumor presence using AI
+    </p>
 """, unsafe_allow_html=True)
 
 # File uploader
