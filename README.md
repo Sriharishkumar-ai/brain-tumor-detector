@@ -50,7 +50,8 @@ brain-tumor-detector/
 ├── LICENSE                # Open-source MIT License
 └── README.md              # Project documentation (this file)
 ```
-
+## Drive Link for Trained CNN Model: https://drive.google.com/file/d/13jq33NwIxSrmuef4G3uZZQwrG0wT9VuK/view?usp=sharing
+File size is above 100mb, github only supports files lesser than 100 mb
 ## 👥 Who Is This For?
 
 * **Healthcare professionals** exploring AI tools for diagnostics
