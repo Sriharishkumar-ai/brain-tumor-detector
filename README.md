@@ -115,7 +115,6 @@ streamlit
 tensorflow
 numpy
 pillow
-⚠️ Tip: Ensure brain_tumor_model.h5 is under 100MB to meet Hugging Face's file size limit.
 
 4. Deploy Automatically
 Once all files are uploaded, the app will automatically deploy and be accessible at:
