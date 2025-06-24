@@ -42,10 +42,17 @@ st.markdown("""
         justify-content: center;
         margin-bottom: 1em;
     }
-    .uploadedFileName {
-        font-weight: 700 !important;
-        color: #1e3a8a !important;
+    /* Target the uploaded filename text */
+    .uploadedFileName, .stFileUploader .uploaded-file-name {
+        color: #2563eb !important;  /* 🔵 Blue */
+        font-weight: 600;
+        font-size: 0.95rem;
     }
+    /* 👇 Hide default white file name info */
+    .css-1uixxvy.e1b2p2ww15 {
+        display: none !important;
+    }
+
     label, footer {
         color: #1e3a8a !important;
     }
@@ -72,9 +79,15 @@ if uploaded_file:
         resized = image.resize((256, 256))
         input_array = np.array(resized).reshape(1, 256, 256, 1) / 255.0
 
-        # Show image with dark caption
-        st.markdown(f"<div class='uploadedFileName'>Uploaded MRI Image:</div>", unsafe_allow_html=True)
-        st.image(image, caption=uploaded_file.name, use_container_width=True)
+         # ✅ Custom violet-colored filename display
+        st.markdown(f"""
+            <div style='margin: 0.8em 0 0.3em; font-weight: 600; color: #7c3aed; font-size: 0.95rem;'>
+                📄 Uploaded File: {uploaded_file.name}
+            </div>
+        """, unsafe_allow_html=True)
+
+        # Show image preview
+        st.image(image, caption="Uploaded MRI Image", use_container_width=True)
 
         # Predict
         prediction = model.predict(input_array)[0][0]
